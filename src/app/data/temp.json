@@ -11,6 +11,10 @@
     },
     {
       "name": "Premium Plan",
+      "element": {
+        "General": true,
+        "Specialist": false
+      },
       "price": 388
     }
   ]
