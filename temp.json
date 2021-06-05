@@ -1,0 +1,17 @@
+{
+  "plan": [
+    {
+      "name": "Standard Plan",
+      "element": {
+        "General": true,
+        "Specialist": true,
+        "Physiotherapy": false
+      },
+      "price": 0
+    },
+    {
+      "name": "Premium Plan",
+      "price": 388
+    }
+  ]
+}

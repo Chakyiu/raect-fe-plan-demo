@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import FEForm from "./components/FEForm";
+import FEPlan from "./components/FEPlan";
 
 function App() {
+  const [inputString, setInputString] = useState("");
+  const [jsonInput, setJsonInput] = useState({});
+  const [isShow, setIsShow] = useState(false);
+
+  const submitOnClick = () => {
+    setIsShow(true);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="d-flex justify-content-center align-items-center h-100 w-100">
+        {isShow ? (
+          <FEPlan data={jsonInput} setIsShow={setIsShow} />
+        ) : (
+          <FEForm
+            inputString={inputString}
+            setInputString={setInputString}
+            setJsonInput={setJsonInput}
+            submitOnClick={submitOnClick}
+          />
+        )}
+      </div>
     </div>
   );
 }
