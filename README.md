@@ -1,70 +1,181 @@
-# Getting Started with Create React App
+# Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To create and choose plan by users' input.
+[Demo Link](https://chakyiu.github.io/react-fe-plan-demo/index)
 
-## Available Scripts
+# Instruction
 
-In the project directory, you can run:
+1. Clone the project and run `npm install` and `npm run start` under the root folder.
+2. Run `npm run build` and pull all data in `./build` to static server.
+3. Config home page under `./package.json` and run `npm run deploy`
 
-### `npm start`
+# Unit test
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+0. Layout showcase
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Empty Field: ![Demo_Img_1](demo/demo_img_0_0.png)
+Error Input: ![Demo_Img_1](demo/demo_img_0_1.png) (When submit button is clicked during error input, it will have shaking animation to alert user.)
+Correct Input: ![Demo_Img_1](demo/demo_img_0_2.png)
+Plan Page: ![Demo_Img_1](demo/demo_img_0_3.png)
 
-### `npm test`
+1. Acceptable and sample input format:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```json
+{
+  "plan": [
+    {
+      "name": "Standard Plan",
+      "element": {
+        "General": true,
+        "Specialist": true,
+        "Physiotherapy": false
+      },
+      "price": 0
+    },
+    {
+      "name": "Premium Plan",
+      "element": {
+        "General": true,
+        "Specialist": false
+      },
+      "price": 388
+    }
+  ]
+}
+```
 
-### `npm run build`
+Result: ![Demo_Img_1](demo/demo_img_1.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. More than three plans inputed:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```json
+{
+  "plan": [
+    {
+      "name": "Standard Plan",
+      "element": {
+        "General": true,
+        "Specialist": true,
+        "Physiotherapy": false
+      },
+      "price": 0
+    },
+    {
+      "name": "Premium Plan",
+      "element": {
+        "General": true,
+        "Specialist": false
+      },
+      "price": 388
+    },
+    {
+      "name": "Premium Plan",
+      "element": {
+        "General": true,
+        "Specialist": false
+      },
+      "price": 388
+    },
+    {
+      "name": "Premium Plan",
+      "element": {
+        "General": true,
+        "Specialist": false
+      },
+      "price": 388
+    },
+    {
+      "name": "Premium Plan",
+      "element": {
+        "General": true,
+        "Specialist": false
+      },
+      "price": 388
+    },
+    {
+      "name": "Premium Plan",
+      "element": {
+        "General": true,
+        "Specialist": false
+      },
+      "price": 388
+    }
+  ]
+}
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Result: ![Demo_Img_2](demo/demo_img_2.png)
 
-### `npm run eject`
+3. Empty JSON
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```json
+{}
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Result: ![Demo_Img_2](demo/demo_img_3.png) 4. Empty Plan
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```json
+{
+  "plan": []
+}
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Result: ![Demo_Img_2](demo/demo_img_4.png)
 
-## Learn More
+5. Plan with no "Name"
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```json
+{
+  "plan": [
+    {
+      "element": {
+        "General": true,
+        "Specialist": true,
+        "Physiotherapy": false
+      },
+      "price": 0
+    }
+  ]
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Result: ![Demo_Img_2](demo/demo_img_5.png)
 
-### Code Splitting
+6. Plan with no "Element"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```json
+{
+  "plan": [
+    {
+      "name": "Standard Plan",
+      "price": 0
+    }
+  ]
+}
+```
 
-### Analyzing the Bundle Size
+Result: ![Demo_Img_2](demo/demo_img_6.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+7. Plan with no "Price"
 
-### Making a Progressive Web App
+```json
+{
+  "plan": [
+    {
+      "name": "Standard Plan",
+      "element": {
+        "General": true,
+        "Specialist": true,
+        "Physiotherapy": false
+      }
+    }
+  ]
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Result: ![Demo_Img_2](demo/demo_img_7.png)
 
-### Advanced Configuration
+8. Responsive layout
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Demo_Img_2](demo/demo_img_8_1.png)
+![Demo_Img_2](demo/demo_img_8_2.png) (For too many plans inputed, the plan list can be scolled horizontally.)
