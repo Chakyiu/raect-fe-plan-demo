@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/raect-fe-plan-demo/static/css/main.bc16d49f.chunk.css",
-    "main.js": "/raect-fe-plan-demo/static/js/main.4b610022.chunk.js",
-    "main.js.map": "/raect-fe-plan-demo/static/js/main.4b610022.chunk.js.map",
-    "runtime-main.js": "/raect-fe-plan-demo/static/js/runtime-main.98a59608.js",
-    "runtime-main.js.map": "/raect-fe-plan-demo/static/js/runtime-main.98a59608.js.map",
-    "static/css/2.61b4cb56.chunk.css": "/raect-fe-plan-demo/static/css/2.61b4cb56.chunk.css",
-    "static/js/2.8521ae91.chunk.js": "/raect-fe-plan-demo/static/js/2.8521ae91.chunk.js",
-    "static/js/2.8521ae91.chunk.js.map": "/raect-fe-plan-demo/static/js/2.8521ae91.chunk.js.map",
-    "static/js/3.1b6725f7.chunk.js": "/raect-fe-plan-demo/static/js/3.1b6725f7.chunk.js",
-    "static/js/3.1b6725f7.chunk.js.map": "/raect-fe-plan-demo/static/js/3.1b6725f7.chunk.js.map",
-    "index.html": "/raect-fe-plan-demo/index.html",
-    "static/css/2.61b4cb56.chunk.css.map": "/raect-fe-plan-demo/static/css/2.61b4cb56.chunk.css.map",
-    "static/css/main.bc16d49f.chunk.css.map": "/raect-fe-plan-demo/static/css/main.bc16d49f.chunk.css.map",
-    "static/js/2.8521ae91.chunk.js.LICENSE.txt": "/raect-fe-plan-demo/static/js/2.8521ae91.chunk.js.LICENSE.txt"
+    "main.css": "/react-fe-plan-demo/static/css/main.bc16d49f.chunk.css",
+    "main.js": "/react-fe-plan-demo/static/js/main.21dba0d4.chunk.js",
+    "main.js.map": "/react-fe-plan-demo/static/js/main.21dba0d4.chunk.js.map",
+    "runtime-main.js": "/react-fe-plan-demo/static/js/runtime-main.2722c80d.js",
+    "runtime-main.js.map": "/react-fe-plan-demo/static/js/runtime-main.2722c80d.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/react-fe-plan-demo/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.8888b02e.chunk.js": "/react-fe-plan-demo/static/js/2.8888b02e.chunk.js",
+    "static/js/2.8888b02e.chunk.js.map": "/react-fe-plan-demo/static/js/2.8888b02e.chunk.js.map",
+    "static/js/3.91c47200.chunk.js": "/react-fe-plan-demo/static/js/3.91c47200.chunk.js",
+    "static/js/3.91c47200.chunk.js.map": "/react-fe-plan-demo/static/js/3.91c47200.chunk.js.map",
+    "index.html": "/react-fe-plan-demo/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/react-fe-plan-demo/static/css/2.61b4cb56.chunk.css.map",
+    "static/css/main.bc16d49f.chunk.css.map": "/react-fe-plan-demo/static/css/main.bc16d49f.chunk.css.map",
+    "static/js/2.8888b02e.chunk.js.LICENSE.txt": "/react-fe-plan-demo/static/js/2.8888b02e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.98a59608.js",
+    "static/js/runtime-main.2722c80d.js",
     "static/css/2.61b4cb56.chunk.css",
-    "static/js/2.8521ae91.chunk.js",
+    "static/js/2.8888b02e.chunk.js",
     "static/css/main.bc16d49f.chunk.css",
-    "static/js/main.4b610022.chunk.js"
+    "static/js/main.21dba0d4.chunk.js"
   ]
 }
