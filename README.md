@@ -1,7 +1,7 @@
 # Introduction
 
 To create and choose plan by users' input.
-[Demo Link](https://chakyiu.github.io/react-fe-plan-demo/index)
+### [Demo Link](https://chakyiu.github.io/react-fe-plan-demo/index)
 
 # Instruction
 
